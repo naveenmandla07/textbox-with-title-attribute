@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Lazy Load Date Textbox Test</title>
+<title>Lazy Load Date Selector Test</title>
 
 <style>
 body{
@@ -48,9 +48,9 @@ window.onload = loadTextbox;
 
 <body>
 
-<h1>Lazy Load Wait Test Page</h1>
+<h1>Lazy Load Date Selector Test Page</h1>
 
-<p id="loading">Date picker will load in 5 seconds...</p>
+<p id="loading">Date selector will load in 5 seconds...</p>
 
 <div id="textboxContainer">
 
@@ -59,8 +59,10 @@ window.onload = loadTextbox;
 <br><br>
 
 <input
-type="date"
-title="date picker textbox"
+type="text"
+placeholder="Select date"
+title="date selector with placeholder"
+onfocus="this.type='date'"
 />
 
 </div>
