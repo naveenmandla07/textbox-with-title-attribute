@@ -6,39 +6,42 @@
 
 <style>
 body{
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 120px;
+font-family: Arial, sans-serif;
+text-align:center;
+margin-top:120px;
 }
 
 #textboxContainer{
-    display:none;
+display:none;
 }
 
 input{
-    padding:10px;
-    font-size:16px;
-    width:250px;
+padding:10px;
+font-size:16px;
+width:250px;
 }
 
 #loading{
-    font-size:18px;
-    color:gray;
+font-size:18px;
+color:gray;
 }
 </style>
 
 <script>
+
 function loadTextbox(){
-    // simulate lazy loading for 5 seconds
-    setTimeout(function(){
 
-        document.getElementById("loading").style.display="none";
-        document.getElementById("textboxContainer").style.display="block";
+setTimeout(function(){
 
-    },5000);
+document.getElementById("loading").style.display="none";
+document.getElementById("textboxContainer").style.display="block";
+
+},5000);
+
 }
 
 window.onload = loadTextbox;
+
 </script>
 
 </head>
@@ -50,10 +53,13 @@ window.onload = loadTextbox;
 <p id="loading">Textbox will load in 5 seconds...</p>
 
 <div id="textboxContainer">
-<label>Enter Name:</label><br><br>
 
-<input 
-type="text" 
+<label>Enter Name:</label>
+
+<br><br>
+
+<input
+type="text"
 title="username textbox"
 placeholder="Enter your name"
 />
